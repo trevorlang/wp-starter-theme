@@ -41,11 +41,24 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['./src/scss/**/*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass', 'postcss'],
         options: {
             spawn: false,
         }
       } 
+    },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('pixrem')(),
+          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('cssnano')()
+        ]
+      },
+      dist: {
+        src: './style.css'
+      }
     }
   });
 
@@ -55,8 +68,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint','concat','uglify','sass']);
+  grunt.registerTask('default', ['jshint','concat','uglify','sass','postcss']);
 
 };

@@ -1,0 +1,10 @@
+.swc {
+	&__wrapper {
+		background: $tundora;
+		@extend .w__fullwidth;
+	}
+
+	&__container {
+		@extend .c__centered;
+	}
+}

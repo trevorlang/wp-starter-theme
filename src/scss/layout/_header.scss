@@ -1,0 +1,33 @@
+.swh {
+	&__wrapper {
+		background: $lime;
+		@extend .w__fullwidth;
+	}
+
+	&__container {
+		@extend .c__centered;
+	}
+
+	&__logo {
+		font-size: 2rem;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	&__logo-link {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $logo-color;
+
+		&:visited {
+			color: $logo-color;
+		}
+	}
+
+	&__tag-line {
+		margin-top: .75rem;
+		font-size: .9rem;
+		color: #888;
+		font-weight: 400;
+	}
+}

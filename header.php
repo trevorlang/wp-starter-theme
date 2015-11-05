@@ -7,7 +7,9 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="swheader__container">
-	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
-	<h5><?php bloginfo('description'); ?></h5>
-</header>
+<section class="swh__wrapper">
+	<header class="swh__container">
+		<h1 class="swh__logo"><a class="swh__logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h5 class="swh__tag-line"><?php bloginfo('description'); ?></h5>
+	</header>
+</section>

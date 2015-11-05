@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
+$font-stack: 'Cabin', 'Arial', 'sans-serif';
+
+body {
+	font-family: $font-stack;
+	color: $font-color;
+	line-height: $line-height;
+	background-color: $cod-gray;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}

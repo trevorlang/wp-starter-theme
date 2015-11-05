@@ -1,4 +1,3 @@
 $(function(){
-	$element = $('<div>').addClass('yay').text('Yay!');
-	$('footer').append($element);
+	console.log('Hello, from src/js/main.js');
 });

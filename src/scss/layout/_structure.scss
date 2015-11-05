@@ -1,0 +1,18 @@
+.w__fullwidth {
+	width: 100%;
+	height: auto;
+	@extend .clearfix;
+}
+
+.c__centered {
+	width: 100%;
+	padding: 1rem;
+	margin: 0 auto;
+	@extend .clearfix;
+}
+
+@media screen and ( min-width: 60em ) {
+	.c__centered {
+		width: 60rem;
+	}
+}
