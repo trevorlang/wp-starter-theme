@@ -1,0 +1,17 @@
+/*
+Theme Name: wordpress-starter-theme
+Theme URI: https://github.com/trevorlang/wp-starter-theme
+Author: Trevor Lang
+Author URI: http://trevorsaynever.com
+Description: A starting point for theme developement using Grunt
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  background-color: #EDEDED;
+}
+
+/*# sourceMappingURL=style.css.map */
