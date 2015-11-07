@@ -1,6 +1,5 @@
 .swh {
 	&__wrapper {
-		background: $lime;
 		@extend .w__fullwidth;
 	}
 
@@ -25,9 +24,36 @@
 	}
 
 	&__tag-line {
-		margin-top: .75rem;
-		font-size: .9rem;
+		margin-top: 0.75rem;
+		font-size: 0.9rem;
 		color: #888;
 		font-weight: 400;
+	}
+
+	&__nav-menu ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__nav-menu li {
+		float: left;
+		display: inline-block;
+		margin: 0 0.25rem 0 0;
+		padding: 0.5rem 1rem;
+		border: 1px solid #DEDEDE;
+		font-size: 1rem;
+
+
+		&:hover {
+			background-color: #CCC;
+		}
+	}
+
+	&__nav-menu a {
+		text-decoration: none;
+		color: #555;
+	    font-weight: 900;
+		font-size: 0.87rem;
 	}
 }

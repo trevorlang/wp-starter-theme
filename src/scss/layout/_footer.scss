@@ -1,9 +1,22 @@
 .swf {
 	&__wrapper {
 		@extend .w__fullwidth;
+		border-top: 1px solid #DEDEDE;
 	}
 
 	&__container {
 		@extend .c__centered;
+	}
+
+	&__nav-menu ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__nav-menu li {
+		display: inline-block;
+		margin: 0 1rem 0 0;
+		font-size: 0.8rem;
 	}
 }

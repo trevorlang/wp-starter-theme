@@ -54,3 +54,36 @@ function wpStarterTheme_enqueue_script() {
 
 add_action( 'wp_enqueue_scripts', 'wpStarterTheme_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'wpStarterTheme_enqueue_script' );
+
+
+// Register Navigation Menus
+
+register_nav_menus( array(
+	'header' => __('Header Menu'),
+	'footer' => __('Footer Menu'),
+));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

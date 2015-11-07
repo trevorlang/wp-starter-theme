@@ -11,5 +11,13 @@
 	<header class="swh__container">
 		<h1 class="swh__logo"><a class="swh__logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
 		<h5 class="swh__tag-line"><?php bloginfo('description'); ?></h5>
+		<?php 
+			$bargs = array(
+				'theme-location' 	=> 'header',
+				'container'			=> 'nav',
+				'container_class'	=> 'swh__nav-menu',
+			);
+		?>
+		<?php wp_nav_menu( $bargs ); ?>
 	</header>
 </section>
