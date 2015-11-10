@@ -1,8 +1,11 @@
 // Typography
 
 $line-height: 1.4em;
-$font-color: #333;
-$logo-color: $font-color;
+$color-font: #252525;
+$color-font-light: #565656;
+$color-heading: #494C4E;
+$color-logo: $color-font;
+$color-snow: #FFF;
 
 
 // Colors
@@ -19,3 +22,9 @@ $scorpion: #595959;
 $tundora: #444;
 $mine-shaft: #363636;
 $cod-gray: #111;
+
+$color-smoke-light: #37374A;
+$color-smoke-dark: #0A0A12;
+
+
+$color-gradient-smoke: radial-gradient(ellipse farthest-corner at center top, $color-smoke-light 0%, $color-smoke-dark);

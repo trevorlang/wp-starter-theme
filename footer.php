@@ -1,11 +1,11 @@
-	<section class="swf__wrapper">
-		<footer class="swf__container">
+	<section class="main-footer__wrapper">
+		<footer class="main-footer__container">
 			<nav>
 				<?php 
 					$args = array(
-						'theme-location' 	=> 'footer',
+						'theme_location' 	=> 'footer',
 						'container'			=> 'nav',
-						'container_class'	=> 'swf__nav-menu',
+						'container_class'	=> 'footer-nav__container',
 					);
 				?>
 				<?php wp_nav_menu( $args ); ?>

@@ -7,17 +7,17 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<section class="swh__wrapper">
-	<header class="swh__container">
-		<h1 class="swh__logo"><a class="swh__logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h5 class="swh__tag-line"><?php bloginfo('description'); ?></h5>
+<section class="main-header__wrapper">
+	<header class="main-header__container">
+		<h1 class="main-header__logo"><a class="main-header__logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
 		<?php 
-			$bargs = array(
-				'theme-location' 	=> 'header',
+			$args = array(
+				'theme_location' 	=> 'header',
 				'container'			=> 'nav',
-				'container_class'	=> 'swh__nav-menu',
+				'container_class'	=> 'main-nav__container',
+				'container_id'		=> 'main-nav__container',
 			);
 		?>
-		<?php wp_nav_menu( $bargs ); ?>
+		<?php wp_nav_menu( $args ); ?>
 	</header>
 </section>

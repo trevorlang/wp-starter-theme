@@ -6,8 +6,9 @@ $font-stack: 'Cabin', 'Arial', 'sans-serif';
 
 body {
 	font-family: $font-stack;
-	color: $font-color;
+	color: $color-font;
 	line-height: $line-height;
+	letter-spacing: 0.03rem;
 }
 
 .clearfix:before,
@@ -20,4 +21,17 @@ body {
 }
 .clearfix {
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $color-heading;
+	letter-spacing: 0.01rem;
+}
+
+h1 {
+	line-height: 1.9rem;
 }

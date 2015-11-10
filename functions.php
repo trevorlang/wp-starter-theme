@@ -1,5 +1,17 @@
 <?php
 
+// Disable the WP admin bar 
+
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+	  show_admin_bar(false);
+	}
+}
+
+add_action('after_setup_theme', 'remove_admin_bar');
+
+show_admin_bar(false);
+
 // Remove emojicon junk
 
 function disable_emojicons_tinymce( $plugins ) {
@@ -59,8 +71,8 @@ add_action( 'wp_enqueue_scripts', 'wpStarterTheme_enqueue_script' );
 // Register Navigation Menus
 
 register_nav_menus( array(
-	'header' => __('Header Menu'),
-	'footer' => __('Footer Menu'),
+	'header' => 'Header',
+	'footer' => 'Footer',
 ));
 
 

@@ -1,4 +1,5 @@
-.swh {
+.main-header {
+	
 	&__wrapper {
 		@extend .w__fullwidth;
 	}
@@ -8,52 +9,32 @@
 	}
 
 	&__logo {
+		width: 100%;
+		margin: 0 auto 0.75rem 0;
 		font-size: 2rem;
-		font-weight: 400;
-		margin-bottom: 0;
+		font-weight: 900;
+	    font-size: 1.2rem;
+	    text-align: center;
 	}
 
 	&__logo-link {
 		text-decoration: none;
 		text-transform: uppercase;
-		color: $logo-color;
+		color: $color-logo;
 
 		&:visited {
-			color: $logo-color;
+			color: $color-logo;
 		}
 	}
+}
 
-	&__tag-line {
-		margin-top: 0.75rem;
-		font-size: 0.9rem;
-		color: #888;
-		font-weight: 400;
-	}
+@media screen and ( min-width: 30em ) {
 
-	&__nav-menu ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+	.main-header {
 
-	&__nav-menu li {
-		float: left;
-		display: inline-block;
-		margin: 0 0.25rem 0 0;
-		padding: 0.5rem 1rem;
-		border: 1px solid #DEDEDE;
-		font-size: 1rem;
-
-
-		&:hover {
-			background-color: #CCC;
+		&__logo {
+			text-align: left;
+			font-size: 1.4rem;
 		}
-	}
-
-	&__nav-menu a {
-		text-decoration: none;
-		color: #555;
-	    font-weight: 900;
-		font-size: 0.87rem;
 	}
 }

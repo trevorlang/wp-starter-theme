@@ -1,0 +1,29 @@
+.intro-hero {
+
+	padding: 3.5rem 1rem;
+	background-image: $color-gradient-smoke;
+	color: $color-snow;
+	text-shadow: 0px 0px 20px $color-smoke-dark;
+
+	&__heading {
+		margin: 0 0 0.9rem 0;
+		line-height: 1.2em;
+		text-align: center;
+		color: inherit;
+		text-shadow: inherit;
+	}
+	&__message {
+		margin: 0 auto;
+		max-width: 30em;
+		text-align: center;
+		color: inherit;
+		text-shadow: inherit;
+	}
+}
+
+@media screen and ( min-width: 30em ) {
+
+	.intro-hero {
+		padding: 6.5rem 1rem;
+	}
+}
